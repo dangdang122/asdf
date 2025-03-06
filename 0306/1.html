@@ -1,12 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name=""viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문서</title>
 </head>
 <body>
-    <h1>Welcome HTML5, CSS3, Javascript</h1>
+    <h1 id="dynamic-content">HTML5, CSS3, Javascript에 오신 것을 환영합니다</h1>
+    <img id="dynamic-image" src="시간표.png" alt="Dynamic Image" style="width:300px;height:200px;">
+
+    <script>
+        const messages = [
+            "시간표",
+            "강아지",
+        ];
+
+        const images = [
+            "시간표.png",
+            "댕댕.png",
+        ];
+
+        let index = 0;
+        const contentElement = document.getElementById('dynamic-content');
+        const imageElement = document.getElementById('dynamic-image');
+
+        setInterval(() => {
+            index = (index + 1) % messages.length;
+            contentElement.textContent = messages[index];
+            imageElement.src = images[index];
+        }, 3000);
+    </script>
 </body>
 </html>
