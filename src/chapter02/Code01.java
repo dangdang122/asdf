@@ -7,5 +7,4 @@ public class Code01 {
         System.out.println("얏호!"+271+127);
         System.out.print(1002+154 +"=1156");
     }
-
 }
