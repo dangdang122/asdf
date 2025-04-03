@@ -6,7 +6,7 @@
     <title>선택가능한 입력양식</title>
 </head>
 <body>
-    <form action ="../0327/01.html" method = "get">
+    <form action ="../0327/1.html" method = "get">
         <table>
             <tr>
                 <td>
@@ -23,6 +23,47 @@
                     <label for = "male">남성</label>
                     <input type = "radio" name ="gender" id = "female" value="f">
                     <label for = "female">여성</label>
+                </td>
+            <tr>
+                <td>
+                    관심분야:
+                </td>
+                <td>
+                    <select name = "interest" multiple>
+                        <option value="sports">스포츠</option>
+                        <option value="music">음악</option>
+                        <option value="game">게임</option>
+                        <option value="movie">영화</option>
+                    </select> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    관심분야(항목그룹화):
+                </td>
+                <td>
+                    <select name = "interest">
+                        <optgroup label="스포츠">스포츠</optgroup>
+                            <option value="soccer">축구</option>
+                            <option value="basketball">농구</option>
+                            <option value="baseball">야구</option>
+                        </optgroup>
+                        <optgroup label="음악">음악</optgroup>
+                            <option value="pop">팝</option>
+                            <option value="rock">락</option>
+                            <option value="jazz">재즈</option>
+                        </optgroup>
+                        <optgroup label="게임">게임</optgroup>
+                            <option value="rpg">RPG</option>
+                            <option value="fps">FPS</option>
+                            <option value="strategy">전략</option>
+                        </optgroup>
+                        <optgroup label="영화">영화</optgroup>
+                            <option value="action">액션</option>
+                            <option value="comedy">코미디</option>
+                            <option value="drama">드라마</option>
+                        </optgroup>
+                    </select> 
                 </td>
             </tr>
             <tr align="center">
