@@ -5,16 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>자손 선택자</title>
     <style>
-        #first>h1{
+        #first>h2{
             color : brown;
             background-color : lightyellow;
         }
-        #second>h1{
+        #second>h2{
             color : blue;
             background-color : lightgreen;
         }
     </style>
 </head>
+<!-- 자손 선택자는 테이블에서 잘 안되니 테이블에서는 사용하지말자 -->
 <body>
     <div id = "first">
         <h1>자손 선택자 연습1</h1>
@@ -22,6 +23,9 @@
             <h1>자손 선택자 연습1의 하위 요소</h1>
         </div>
         <h2>자손은 하위 직계를 의미한다.</h2>
+        <div>
+            <h2>아 1촌만 해당이구나</h2>
+        </div>
     </div>
 
     <div id = "second">
@@ -30,6 +34,9 @@
             <h1>자손 선택자 연습2의 하위 요소</h1>
         </div>
         <h2>자손은 하위 직계를 의미한다.</h2>
+        <div>
+            <h2>아 1촌만 해당이구나</h2>
+        </div>
     </div>
 </body>
 </html>
