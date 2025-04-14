@@ -12,7 +12,5 @@ public class Code3_10 {
             System.out.println("아쉽게도 탈락입니다");
         }
         else System.out.println("축하합니다! 합격입니다");
-
-
     }
 }
