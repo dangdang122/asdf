@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글꼴 크기</title>
+    <style>
+        .a{
+            font-size: 32px; /* px : 절대단위 */           
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .b{
+            font-size: 2em; /* em : 배수단위 */           
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .c{
+            font-size: large; /* large : 상대단위 */           
+        }
+        .d{
+            font-size: small; /* small : 상대단위 */           
+        }
+        
+        .font_big{
+            font-size: 3em;
+        }
+        .font_italic{
+            font-style: italic; /* 이탤릭체 */
+        }
+        .font_bold{
+            font-weight: bold; /*굵은 글씨체*/
+        }
+
+        .font_center{
+            text-align: center; /* 가운데 정렬 */
+        }
+
+        .button{
+            width: 150px;
+            height: 70px;
+            background-color: #ffa200;/*배경색*/
+            color : 10px solid white; /*테두리*/
+            border-radius: 10px; /*모서리 둥글게*/
+            box-shadow: 5px 5px 5px #000; /*그림자*/
+        }
+        .button > a{
+            display: block; /* a 태그를 블록으로 설정 */
+            line-height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <p class = "font_big font_italic font-bold">AI Software</p>
+    <p class = "font_bold font_right">2025.04.17</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam, ut pariatur quod culpa sint quis expedita. A, molestiae? Qui, temporibus? Quam at quaerat, natus vel error soluta dignissimos ut ducimus?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi, nobis modi! Consectetur odio expedita impedit alias temporibus dolorum minima! Tempora molestias libero incidunt dolore dolor beatae voluptates nisi, quasi nam.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo consectetur quae natus laudantium perferendis voluptas sit vero iusto, fugit alias adipisci. Accusantium optio placeat velit ipsam magnam, quo esse dolorum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis numquam officia modi architecto aliquid rerum tempore ullam quam nulla exercitationem rem provident, esse veritatis in, quasi recusandae iusto eveniet hic!
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta dignissimos, ipsum ex inventore dolore perferendis dolor ab veniam debitis at impedit soluta quasi est asperiores voluptatem delectus, quos rerum corporis!
+    </p>
+    <div class = "button">
+        <a href="#" class = "font_big font_italic font_bold font_center">CLILCK</a>
+    </div>
+</body>
+</html>
