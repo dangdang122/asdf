@@ -31,5 +31,3 @@ public class LAB {
         System.out.printf("평균 학점은 %.2f", num);
     }
 }
-
-
