@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정중앙 배치</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            margin: 0 auto;
+            width: 70%;
+        }
+        #container{
+            position: absolute;
+            width: 500px;
+            height: 300px;
+            left: 50%;
+            top: 50%;
+            background-color: aquamarine;
+            margin-top: -150px; /* 높이의 절반만큼 위로 이동 */
+            margin-left: -250px; /* 너비의 절반만큼 왼쪽으로 이동 */
+        }
+    </style>
+</head>
+<body>
+    <div id = "container">
+        <h1>div 요소를 정중앙에 배치</h1>
+    </div>
+</body>
+</html>
