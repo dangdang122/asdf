@@ -25,11 +25,23 @@
             // 사용자 정의 속성을 body 요소 객체에 설정
             document.body.setAttribute("data-cheerup", "Ive is the best~~  ");
             alert(document.body.getAttribute("data-cheerup"));
-            
+
         }
+        
+        function callSetClock(){
+            clock = document.querySelector('h1');
+            setInterval(setClock, 1000);
+        }
+
+        function setClock(){
+            let now = new Date();
+            let clock = document.querySelector('h1');
+            clock.innerHTML = now.toString();
+        }
+        
     </script>
 </head>
-<body>
+<body onload = "callSetClock()">
     <hr>
     <button onclick = "changeImage()">이미지 변경</button>
     <button onclick = "reset()">Reset</button>
@@ -42,5 +54,8 @@
     </select>
     <hr>
     <img id = "img1">
+    <hr>
+    <h1></h1>
+    <hr>
 </body>
 </html>
