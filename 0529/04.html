@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImage(){
+            let img = document.getElementById("img1");
+            img.src = "dog2.jpg";
+            img.width = "600";
+        }
+        function reset(){
+            img.src = "";
+            img.width = "0";
+        }
+        function selectedChangeImage(){
+            let select = document.querySelector('select');
+            img = document.getElementById("img1");
+            let index = select.selectedIndex;
+            img.src = select.options[index].value; 
+        }
+    </script>
+</head>
+<body>
+    <hr>
+    <button onclick = "changeImage()">이미지 변경</button>
+    <button onclick = "reset()">Reset</button>
+    <br>
+    <select onchange = "selectedChangeImage()">
+        <option value = "">Select an image</option>
+        <option value = "dog2.jpg">Dog 1</option>
+        <option value = "image.jpg">Dog 2</option>
+    </select>
+    <hr>
+    <img id = "img1">
+</body>
+</html>
