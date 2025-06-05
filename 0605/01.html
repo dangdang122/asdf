@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function callAlert() {
+            alert("알림메시지");
+        }
+        function muffinchihuahua() {
+            alert("머핀 치와와");
+        }
+        function qwer() {
+            alert("공백부분입니다");
+        }
+        function overImage(img) {
+            let img1 = document.getElementById("img1");
+            img.src = "image.jpg";
+        }
+        function outImage(img) {
+            let img1 = document.getElementById("img1");
+            img.src = "dog2.jpg";
+        }
+        function increamentStar(btn) {
+            btn.textContent +="★";    
+        }
+        function removeDefault(){
+            event.preventDefault();
+        }
+
+    </script>
+</head>
+<body>
+    <a href="../0529/04.html" onclick="removeDefault()">자바스크립트 연습</a>
+    <br><br>
+    <button onclick = "callAlert()">알림메시지</button>
+    <br><br>
+    <button onclick="increamentStar(this)">버튼 - </button>
+    <br><br>
+    <img src = "image.jpg" onmouseover="this.src = 'dog2.jpg'"onmouseout= "this.src =  'image.jpg'"/>
+    <br><br>
+    <img src="dog2.jpg" onmouseover="overImage(this)" onmouseout="outImage(img)"/>
+    <br><br>
+    <img src="dog2.jpg" onmouseover="overImage()" onmouseout=""/>
+</body>
+</html>
